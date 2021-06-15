@@ -1,10 +1,10 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const employee = require('./lib/employee.js');
-const manager = require('./lib/manager.js');
-const engineer = require('./lib/engineer.js');
-const intern = require('./lib/intern.js');
+const Employee = require('./lib/Employee.js');
+const Manager = require('./lib/Manager.js');
+const Engineer = require('./lib/Engineer.js');
+const Intern = require('./lib/Intern.js');
 
 // TODO: Create an array of questions for user input
 const questions = [];
