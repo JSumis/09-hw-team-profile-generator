@@ -68,8 +68,6 @@ const employeeRole = () => {
         console.log("This is where we create html page")
         createHtmlPage()
       }
-    
-
   })
 }
 
@@ -130,8 +128,7 @@ const internQuestions = () => {
       employeeRole()
     })
 }
-  
-    managerQuestions()
+  managerQuestions()
      
  
 
@@ -142,7 +139,7 @@ const internQuestions = () => {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <title>Document</title>
+    <title>Team Profile Generator</title>
   </head>
   <body>
     <div class="jumbotron jumbotron-fluid">
@@ -164,7 +161,7 @@ const createHtmlPage = () => {
     const htmlPageContent = generateHTML(answers);
 
     fs.writeFile('index.html', htmlPageContent, (err) =>
-      err ? console.log(err) : console.log('Successfully created index.html!')
+      err ? console.log(err) : console.log('Successfully created your Team Summary page!')
     );
   }
 // TODO: Create a function to initialize app
